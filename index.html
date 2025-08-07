@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS External Link -->
+    <link rel="stylesheet" href="css\style.css">
+
+    <!-- Tailwind CSS CDN -->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <header class="text-center">
+        <h1 class="text-3xl font-bold">Todo List Application</h1>
+    </header>
+    <main class="p-5">
+
+        <form>
+            <div class="flex justify-center mt-5 mb-5">
+                <input type="text" id="todo-input" placeholder="Add a new todo" class="border p-2 w-1/2">
+                <input type="date" id="date-input" placeholder="Add a new todo" class="border p-2 w-1/2">
+                <button type="button" onclick="validateForm();"
+                class="rounded-[4px]-[ml-2 bg-blue-500 text-white p-2">Add Todo</button>
+            </div>
+        </form>
+
+        <!-- Action section -->
+         <section class="flex justify-between">
+            <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">Filter</button>
+            <button class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded" type="button" onclick="clearTodos()">Delete All</button>
+         </section>
+
+         <!-- Todo list section -->
+          <section id="todo-list" class="mt-5">
+
+            <div>
+                <p class="text-gray-700">No todos added yet.</p>
+            </div>
+
+          </section>
+    </main>
+    <footer>
+        <p class="text-center text-gray-500 mt-5">© 2025 Todo List Application</p>
+    </footer>
+
+   
+    <!-- JavaScript External Link -->
+    <script src="js\script.js"></script>
+</body>
+</html>
